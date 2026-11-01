@@ -21,7 +21,7 @@
 
   .card {
     width: 85%;
-    max-width: 340px; 
+    max-width: 340px;
     background: #010a0f;
     border: 1.5px solid #00d2ff;
     border-radius: 35px;
@@ -102,26 +102,28 @@
     color: #888;
   }
 
-  /* Link styling for Agency */
-  .footer-box a { 
-    color: #00d2ff; 
-    font-weight: bold; 
+  .footer-box a {
+    color: #00d2ff;
+    font-weight: bold;
     text-decoration: none;
   }
 
   .disclaimer {
     font-size: 9px;
-    color: #444;
+    color: #666;
     margin-top: 12px;
+    line-height: 1.5;
   }
 </style>
 </head>
 <body>
 
 <div class="card">
-  <img src="https://i.ibb.co/WpnJL9Pv/l3et-M0at-Dy-Ph-Rto-Z7gkj-OZ78ksoecyo-SHh-Syxr-VZwaa-GEt-UE-ldm-Nv-C7u-RC-Ukl-PUy-BNg0f-MF0-NEXO9fw-A.jpg" alt="TRADE WITH SUDHARSHAN" class="profile-img">
 
-  <h1>TRADE WITH GUPTA </h1>
+  <img src="https://i.ibb.co/WpnJL9Pv/l3et-M0at-Dy-Ph-Rto-Z7gkj-OZ78ksoecyo-SHh-Syxr-VZwaa-GEt-UE-ldm-Nv-C7u-RC-Ukl-PUy-BNg0f-MF0-NEXO9fw-A.jpg"
+  alt="TRADE WITH SUDHARSHAN" class="profile-img">
+
+  <h1>TRADE WITH GUPTA</h1>
 
   <div class="features">
     <div class="feature-item"><span class="icon">🌐</span> Learning & Educational Sessions</div>
@@ -132,13 +134,30 @@
 
   <p class="join-text">Join our learning community and grow your knowledge</p>
 
-  <a href="https://t.me/+i1P_U-HFh5VkOTY1" class="telegram-btn">JOIN FREE TELEGRAM</a>
+  <a href="https://t.me/+i1P_U-HFh5VkOTY1"
+     class="telegram-btn"
+     id="telegramJoinBtn">
+     JOIN FREE TELEGRAM
+  </a>
 
-  <p class="hindi-quote">नियत अच्छी और मेहनत सच्ची हो, तो कामयाबी जरूर मिलती है।</p>
+  <p class="hindi-quote">
+    नियत अच्छी और मेहनत सच्ची हो, तो कामयाबी जरूर मिलती है।
+  </p>
 
   <div class="footer-box">
-    This Channel Advertise By <a href="https://t.me/+KMkMkqIAJvliMzM1" target="_blank">AdNexProAgency</a>
+    This Channel Advertise By
+    <a href="https://t.me/+KMkMkqIAJvliMzM1" target="_blank">
+      AdNexProAgency
+    </a>
   </div>
+
+  <p class="disclaimer">
+    Disclaimer: For educational purposes only. Not financial advice.
+    Trading involves market risk.
+  </p>
+
+</div>
+
 <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
@@ -149,13 +168,30 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
+
 fbq('init', '1580337857444585');
 fbq('track', 'PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1580337857444585&ev=PageView&noscript=1"
-/></noscript>
+
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1580337857444585&ev=PageView&noscript=1"/>
+</noscript>
 <!-- End Meta Pixel Code -->
+
+<!-- Telegram Subscribe Event -->
+<script>
+document.getElementById('telegramJoinBtn').addEventListener('click', function() {
+
+  if (typeof fbq === 'function') {
+    fbq('track', 'Subscribe', {
+      value: 1.00,
+      currency: 'INR'
+    });
+  }
+
+});
+</script>
 
 </body>
 </html>
